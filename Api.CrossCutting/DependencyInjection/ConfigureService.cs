@@ -1,4 +1,6 @@
-﻿using Api.Domain.Interfaces.Services.User;
+﻿using Api.Domain.Interfaces.Services.Login;
+using Api.Domain.Interfaces.Services.User;
+using Api.Service.Services.Login;
 using Api.Service.Services.User;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +15,8 @@ namespace Api.CrossCutting.DependencyInjection
             //Singletion -> Instancia apenas 1x durante o ciclo de vida da aplicação.
 
             serviceCollection.AddScoped<IUserService, UserService>();
+            serviceCollection.AddScoped<ILoginService, LoginService>();
         }
     }
 }
+

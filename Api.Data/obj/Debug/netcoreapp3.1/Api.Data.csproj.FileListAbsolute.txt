@@ -34,4 +34,3 @@ D:\Projetos\GIT\FDevs\FDevs_API\Api.Data\obj\Debug\netcoreapp3.1\Api.Data.csproj
 D:\Projetos\GIT\FDevs\FDevs_API\Api.Data\obj\Debug\netcoreapp3.1\Api.Data.csproj.CopyComplete
 D:\Projetos\GIT\FDevs\FDevs_API\Api.Data\obj\Debug\netcoreapp3.1\Api.Data.dll
 D:\Projetos\GIT\FDevs\FDevs_API\Api.Data\obj\Debug\netcoreapp3.1\Api.Data.pdb
-D:\Projetos\GIT\FDevs\FDevs_API\Api.Data\bin\Debug\netcoreapp3.1\Database\Database.mdf
