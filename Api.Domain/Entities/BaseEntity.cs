@@ -7,12 +7,11 @@ namespace Api.Domain.Entities
     {
         [ExplicitKey]
         public Guid Id { get; set; }
+        public DateTime? DataAtualizacao { get; set; }
 
-        private DateTime? _dataAtualizacao;
-        public DateTime? DataAtualizacao
+        public BaseEntity()
         {
-            get { return _dataAtualizacao; }
-            set { _dataAtualizacao = (value == null ? DateTime.UtcNow : value); }
+            DataAtualizacao = DateTime.Now;
         }
     }
 }

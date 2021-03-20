@@ -1,10 +1,7 @@
 ﻿using Api.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Text;
 
 namespace Api.Data.Context
 {
@@ -17,6 +14,7 @@ namespace Api.Data.Context
         {
             _config = config;
             Connection = new SqlConnection(_config.GetConnectionString("ConnectionString"));
+            Connection.Open();
         }
 
         public void Dispose()
