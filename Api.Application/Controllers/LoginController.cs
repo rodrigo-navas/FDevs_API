@@ -1,10 +1,7 @@
-﻿
-using Api.Domain.Entities;
+﻿using Api.Domain.Dtos;
 using Api.Domain.Interfaces.Services.Login;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -22,17 +19,17 @@ namespace Api.Application.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<object>> Login([FromBody] UserEntity userEntity)
+        public async Task<ActionResult<object>> Login([FromBody] LoginDto login)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            if (userEntity == null)
+            if (login == null)
                 return BadRequest();
 
             try
             {
-                return Ok(await _loginService.FindByLoginAsync(userEntity));
+                return Ok(await _loginService.FindByLoginAsync(login));
             }
             catch (Exception ex)
             {
