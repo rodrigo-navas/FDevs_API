@@ -1,27 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Domain\\Api.Domain.csproj": {}
+    "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Domain\\Api.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Domain\\Api.Domain.csproj": {
+    "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Domain\\Api.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Domain\\Api.Domain.csproj",
+        "projectUniqueName": "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Domain\\Api.Domain.csproj",
         "projectName": "Api.Domain",
-        "projectPath": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Domain\\Api.Domain.csproj",
-        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Domain\\obj\\",
+        "projectPath": "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Domain\\Api.Domain.csproj",
+        "packagesPath": "C:\\Users\\rodrigo.navas\\.nuget\\packages\\",
+        "outputPath": "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\rodrigo.navas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.telerik.com/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
