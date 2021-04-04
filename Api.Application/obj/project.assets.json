@@ -1100,6 +1100,7 @@
           "Api.Data": "1.0.0",
           "Api.Domain": "1.0.0",
           "Api.Service": "1.0.0",
+          "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1"
         },
         "compile": {
@@ -1145,7 +1146,8 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Api.Data": "1.0.0",
-          "Api.Domain": "1.0.0"
+          "Api.Domain": "1.0.0",
+          "AutoMapper": "10.1.1"
         },
         "compile": {
           "bin/placeholder/Api.Service.dll": {}

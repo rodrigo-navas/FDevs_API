@@ -1,4 +1,4 @@
-﻿using Api.Domain.Entities;
+﻿using Api.Domain.Dtos.User;
 using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +22,7 @@ namespace Api.Application.Controllers
 
         [Authorize]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserEntity>>> GetAll()
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetAll()
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -39,7 +39,7 @@ namespace Api.Application.Controllers
 
         [Route("{id}", Name = "getWithId")]
         [HttpGet]
-        public async Task<ActionResult<UserEntity>> Get(Guid id)
+        public async Task<ActionResult<UserDto>> Get(Guid id)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -55,16 +55,16 @@ namespace Api.Application.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<UserEntity>> Post([FromBody] UserEntity userEntity)
+        public async Task<ActionResult<UserDtoCreateResult>> Post([FromBody] UserDtoCreate userDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             try
             {
-                var result = await _userService.PostAsync(userEntity);
+                var result = await _userService.PostAsync(userDto);
 
-                if (result != null)
+                if (result == null)
                     return BadRequest();
                 else
                     return Created(new Uri(Url.Link("getWithId", new { id = result.Id })), result);
@@ -76,14 +76,14 @@ namespace Api.Application.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<UserEntity>> Put([FromBody] UserEntity userEntity)
+        public async Task<ActionResult<UserDtoUpdateResult>> Put([FromBody] UserDtoUpdate userDtoUpdate)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             try
             {
-                var result = await _userService.PutAsync(userEntity);
+                var result = await _userService.PutAsync(userDtoUpdate);
 
                 if (result == null)
                     return BadRequest();

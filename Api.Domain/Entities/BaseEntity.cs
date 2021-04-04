@@ -7,11 +7,7 @@ namespace Api.Domain.Entities
     {
         [ExplicitKey]
         public Guid Id { get; set; }
-        public DateTime? DataAtualizacao { get; set; }
-
-        public BaseEntity()
-        {
-            DataAtualizacao = DateTime.Now;
-        }
+        public DateTime? CreateAt { get; set; }
+        public DateTime? UpdateAt { get; set; }
     }
 }

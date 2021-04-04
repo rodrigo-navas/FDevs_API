@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mTH3bB3nHeMo41YNzz/XE9Zh/OhOsdoibHCFxulAtTGfOrHGFv9k4+z0rF/MTURAi4Xfz0Ggg/oOhAz77ybvaA==",
+  "dgSpecHash": "rD3YsA/9qjzaBxUbCm8M38+f9nHKr3ELRANeXWivvlbBNgc7aJ9Gnyr3GpBTpEZTcHecuqewkf2EZcO6ODgOwA==",
   "success": true,
   "projectFilePath": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Service\\Api.Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rodri\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

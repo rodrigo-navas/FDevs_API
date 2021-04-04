@@ -32,7 +32,7 @@ namespace Api.Data.Repository
             if (item.Id == Guid.Empty)
                 item.Id = Guid.NewGuid();
 
-            item.DataAtualizacao = DateTime.Now;
+            item.CreateAt = DateTime.Now;
 
             await _dbContext.Connection.InsertAsync(item);
 
@@ -51,7 +51,7 @@ namespace Api.Data.Repository
 
         public async Task<T> UpdateAsync(T item)
         {
-            item.DataAtualizacao = DateTime.Now;
+            item.UpdateAt = DateTime.Now;
 
             await _dbContext.Connection.UpdateAsync(item);
 

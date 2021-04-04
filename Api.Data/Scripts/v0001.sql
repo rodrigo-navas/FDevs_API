@@ -4,9 +4,8 @@
            Id UNIQUEIDENTIFIER NOT NULL,
            Name VARCHAR(200),
            Email VARCHAR(200) UNIQUE,
-           Password VARCHAR(200),
-           RefreshToken VARCHAR(8000),
-           DataAtualizacao DATETIME
+           CreateAt DATETIME,
+           UpdateAt DATETIME
     )
 
     ALTER TABLE [User] ADD CONSTRAINT USER_PK PRIMARY KEY (Id);
