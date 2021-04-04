@@ -1111,43 +1111,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rodrigo.navas\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\rodri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Data\\Api.Data.csproj",
+      "projectUniqueName": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Data\\Api.Data.csproj",
       "projectName": "Api.Data",
-      "projectPath": "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Data\\Api.Data.csproj",
-      "packagesPath": "C:\\Users\\rodrigo.navas\\.nuget\\packages\\",
-      "outputPath": "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Data\\obj\\",
+      "projectPath": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Data\\Api.Data.csproj",
+      "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+      "outputPath": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\rodrigo.navas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nuget.telerik.com/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Domain\\Api.Domain.csproj": {
-              "projectPath": "D:\\UPPERCASE\\GIT\\FDevs_API\\Api.Domain\\Api.Domain.csproj"
+            "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Domain\\Api.Domain.csproj": {
+              "projectPath": "D:\\Projetos\\GIT\\FDevs\\FDevs_API\\Api.Domain\\Api.Domain.csproj"
             }
           }
         }
